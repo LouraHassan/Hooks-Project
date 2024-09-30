@@ -38,9 +38,9 @@ function Landing() {
   };
   return (
     <>
-      {" "}
-      <div className="flex flex-col items-center">
-        <div className="flex flex-row-reverse justify-around  w-full">
+   
+      <div className="flex flex-col items-center h-screen justify-center bg-base-200">
+        <div className="flex flex-row justify-around w-full max-md:flex-col max-md:items-center">
           <div>
             <p className="text-2xl font-semibold text-center">
               {user1}'s Phone
@@ -49,7 +49,7 @@ function Landing() {
             <div className="mockup-phone border-accent ">
               <div className="camera"></div>
               <div className="display bg-base-100">
-                <div className="artboard relative bg-base-100 phone-1 overflow-auto pt-4 px-1 scrollbar scrollbar-thin scrollbar-track-orange-400">
+                <div className="artboard relative bg-base-100 phone-1 overflow-auto pt-4 px-1  scrollbar-thin flex flex-col ">
                   <div className="flex flex-col-reverse grow">
                     {messageArr.map((chat) => (
                       <ChatBubble
@@ -102,8 +102,8 @@ function Landing() {
             <div className="mockup-phone border-secondary ">
               <div className="camera"></div>
               <div className="display bg-base-100">
-                <div className="artboard relative  bg-base-100 phone-1 overflow-auto pt-4 px-1 scrollbar scrollbar-thin scrollbar-track-orange-400">
-                  <div className="flex flex-col-reverse grow">
+                <div className="artboard relative  bg-base-100 phone-1 overflow-auto pt-4 px-1 scrollbar-thin flex flex-col">
+                  <div className="flex flex-col-reverse grow ">
                     {messageArr.map((chat) => (
                       <ChatBubble
                         sender={chat.sender}
@@ -149,7 +149,7 @@ function Landing() {
           </div>
         </div>
         <button
-          className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[8vw] mx-1"
+          className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[12vw] mx-1 max-md:w-[20vw]"
           onClick={() => document.getElementById("my_modal_5").showModal()}
         >
           Exit Chat
