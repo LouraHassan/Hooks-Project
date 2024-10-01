@@ -41,8 +41,6 @@ function Landing() {
   const clearArr = () => {
     setMessageArr([]);
   };
-
- 
   return (
     <>
       <div className="flex flex-col  items-center justify-center bg-base-200 max-sm:py-10">
@@ -96,17 +94,16 @@ function Landing() {
                         tabIndex={0}
                         className="dropdown-content menu bg-base-100 rounded-box w-36 p-1 shadow"
                       >
-                       
                         <button
                           onClick={() =>
-                            document.getElementById("ClearDialog").showModal()}
+                            document.getElementById("ClearDialog").showModal()
+                          }
                           className="text-error m-3"
                         >
                           Clear chat
                         </button>
                       </ul>
                     </div>
-                  
                   </div>
                   <div className="flex flex-col-reverse grow">
                     <p className={"text-center text-lg " + startText}>
@@ -214,8 +211,6 @@ function Landing() {
                         </button>
                       </ul>
                     </div>
-
-               
                   </div>
                   <div className="flex flex-col-reverse grow ">
                     <p className={"text-center text-lg " + startText}>
@@ -263,57 +258,55 @@ function Landing() {
                 </div>
               </div>
               <dialog
-                      id="ImageDialog"
-                      className="modal modal-bottom sm:modal-middle "
-                    >
-                      <div className="modal-box flex flex-col items-center">
-                        <h3 className="font-bold text-lg">
-                          Adding profile image
-                        </h3>
-                        <p className="py-4">
-                          you will loss your chat if you choose to clear!
-                        </p>
-                        <div className="modal-action flex justify-center">
-                          <form method="dialog">
-                            <button className="btn bg-primary w-[8vw] hover:border-primary hover:bg-transparent hover:text-primary mx-1">
-                              Cancel
-                            </button>
-                            <button
-                              onClick={clearArr}
-                              className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[8vw] mx-1"
-                            >
-                              Clear chat
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    </dialog>
-                    <dialog
-                      id="ClearDialog"
-                      className="modal modal-bottom sm:modal-middle "
-                    >
-                      <div className="modal-box flex flex-col items-center">
-                        <h3 className="font-bold text-lg">
-                          Are you sure you want to clear the chat?
-                        </h3>
-                        <p className="py-4">
-                          you will loss your chat if you choose to clear!
-                        </p>
-                        <div className="modal-action flex justify-center">
-                          <form method="dialog">
-                            <button className="btn bg-primary w-[10vw] hover:border-primary hover:bg-transparent hover:text-primary mx-1 max-md:w-[20vw] max-sm:w-[30vw]">
-                              Cancel
-                            </button>
-                            <button
-                              onClick={clearArr}
-                              className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[10vw] mx-1 max-md:w-[20vw] max-sm:w-[30vw]"
-                            >
-                              Clear chat
-                            </button>
-                          </form>
-                        </div>
-                      </div>
-                    </dialog>
+                id="ImageDialog"
+                className="modal modal-bottom sm:modal-middle "
+              >
+                <div className="modal-box flex flex-col items-center">
+                  <h3 className="font-bold text-lg">Adding profile image</h3>
+                  <p className="py-4">
+                    you will loss your chat if you choose to clear!
+                  </p>
+                  <div className="modal-action flex justify-center">
+                    <form method="dialog">
+                      <button className="btn bg-primary w-[8vw] hover:border-primary hover:bg-transparent hover:text-primary mx-1">
+                        Cancel
+                      </button>
+                      <button
+                        onClick={clearArr}
+                        className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[8vw] mx-1"
+                      >
+                        Clear chat
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+              <dialog
+                id="ClearDialog"
+                className="modal modal-bottom sm:modal-middle "
+              >
+                <div className="modal-box flex flex-col items-center">
+                  <h3 className="font-bold text-lg">
+                    Are you sure you want to clear the chat?
+                  </h3>
+                  <p className="py-4">
+                    you will loss your chat if you choose to clear!
+                  </p>
+                  <div className="modal-action flex justify-center">
+                    <form method="dialog">
+                      <button className="btn bg-primary w-[10vw] hover:border-primary hover:bg-transparent hover:text-primary mx-1 max-md:w-[20vw] max-sm:w-[30vw]">
+                        Cancel
+                      </button>
+                      <button
+                        onClick={clearArr}
+                        className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[10vw] mx-1 max-md:w-[20vw] max-sm:w-[30vw]"
+                      >
+                        Clear chat
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
             </div>
           </div>
         </div>
