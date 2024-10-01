@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <div className="h-screen flex justify-around items-center max-md:justify-center">
-        <div className=" flex flex-col items-start max-md:items-center max-sm:items-center">
+        <div className="flex flex-col items-start max-md:items-center ">
           <div className="flex my-6">
 
          
