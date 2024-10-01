@@ -45,7 +45,7 @@ function Landing() {
  
   return (
     <>
-      <div className="flex flex-col h-screen items-center justify-center bg-base-200 max-sm:py-10">
+      <div className="flex flex-col  items-center justify-center bg-base-200 max-sm:py-10">
         <div className="flex flex-row justify-around w-full max-md:flex-col max-md:items-center">
           <div>
             <p className="text-2xl font-semibold text-center">
@@ -301,12 +301,12 @@ function Landing() {
                         </p>
                         <div className="modal-action flex justify-center">
                           <form method="dialog">
-                            <button className="btn bg-primary w-[8vw] hover:border-primary hover:bg-transparent hover:text-primary mx-1">
+                            <button className="btn bg-primary w-[10vw] hover:border-primary hover:bg-transparent hover:text-primary mx-1 max-md:w-[20vw] max-sm:w-[30vw]">
                               Cancel
                             </button>
                             <button
                               onClick={clearArr}
-                              className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[8vw] mx-1"
+                              className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[10vw] mx-1 max-md:w-[20vw] max-sm:w-[30vw]"
                             >
                               Clear chat
                             </button>
@@ -318,7 +318,7 @@ function Landing() {
           </div>
         </div>
         <button
-          className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[12vw] mx-1 max-md:w-[20vw]"
+          className="btn bg-error text-white hover:border-error hover:text-error hover:bg-transparent w-[12vw] mx-1 max-md:w-[20vw] max-sm:w-[40vw]"
           onClick={() => document.getElementById("ExitDialog").showModal()}
         >
           Exit Chat
