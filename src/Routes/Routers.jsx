@@ -14,5 +14,4 @@ const Routers = createBrowserRouter([
         element: <Chat/>
     }
 ])
-
 export default Routers
